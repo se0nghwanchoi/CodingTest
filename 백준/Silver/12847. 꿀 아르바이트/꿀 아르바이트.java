@@ -3,18 +3,16 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    static int n,m;
-    static long[] arr;
 
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-         n = Integer.parseInt(st.nextToken());
-         m = Integer.parseInt(st.nextToken());
+         int n = Integer.parseInt(st.nextToken());
+         int m = Integer.parseInt(st.nextToken());
 
-        arr = new long[n];
+        long[]arr = new long[n];
         long[]prefixSum = new long[n];
 
         st = new StringTokenizer(br.readLine());
